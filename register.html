@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tài Khoản</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container my-5">
+        <div class="row bg-white rounded shadow-sm overflow-hidden">
+            
+            <!-- Cột trái: Bootstrap Carousel quảng bá dịch vụ -->
+            <div class="col-lg-6 p-0 d-none d-lg-block">
+                <div id="registerCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#registerCarousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#registerCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#registerCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner h-100">
+                        <div class="carousel-item active h-100">
+                            <img src="https://picsum.photos/800/1000?random=1" class="d-block w-100 h-100 object-fit-cover" alt="Lợi ích 1">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3 mb-4">
+                                <h5>Trải Nghiệm Tuyệt Vời</h5>
+                                <p>Hệ thống mượt mà và giao diện tối ưu cho người dùng.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="https://picsum.photos/800/1000?random=2" class="d-block w-100 h-100 object-fit-cover" alt="Lợi ích 2">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3 mb-4">
+                                <h5>Bảo Mật Tuyệt Đối</h5>
+                                <p>An toàn thông tin dữ liệu luôn là ưu tiên hàng đầu.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="https://picsum.photos/800/1000?random=3" class="d-block w-100 h-100 object-fit-cover" alt="Lợi ích 3">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3 mb-4">
+                                <h5>Hỗ Trợ 24/7</h5>
+                                <p>Đội ngũ chuyên nghiệp sẵn sàng đồng hành cùng bạn.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#registerCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#registerCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cột phải: Form Đăng Ký -->
+            <div class="col-lg-6 p-4 p-md-5 d-flex flex-column justify-content-center">
+                <h2 class="fw-bold mb-3 text-primary text-center">Tạo Tài Khoản</h2>
+                <p class="text-muted text-center mb-4">Điền đầy đủ thông tin bên dưới để đăng ký</p>
+
+                <form>
+                    <!-- Họ tên -->
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label font-weight-bold">Họ và tên</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <input type="text" class="form-control" id="fullName" placeholder="Nhập họ và tên" required>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Địa chỉ Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                        </div>
+                    </div>
+
+                    <!-- Mật khẩu -->
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Mật khẩu</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                            <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" required>
+                        </div>
+                    </div>
+
+                    <!-- Xác nhận Mật khẩu -->
+                    <div class="mb-4">
+                        <label for="confirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Nhập lại mật khẩu" required>
+                        </div>
+                    </div>
+
+                    <!-- Nút Submit -->
+                    <div class="d-grid mb-3">
+                        <button type="submit" class="btn btn-primary btn-lg">Đăng Ký</button>
+                    </div>
+
+                    <p class="text-center text-muted mb-0">Đã có tài khoản? <a href="#" class="text-primary text-decoration-none">Đăng nhập ngay</a></p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
