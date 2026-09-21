@@ -2,40 +2,80 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Lịch họp công ty</title>
+    <title>Thực hành Danh sách trong CSS</title>
+    <style>
+        /* Danh sách không thứ tự: kiểu square, màu chữ và background */
+        ul.a {
+            list-style-type: square;
+            background: #f4f4f4;
+            padding: 15px;
+        }
+        ul.a li {
+            color: #d9534f;
+        }
+
+        /* Danh sách có thứ tự: kiểu upper-roman */
+        ol.b {
+            list-style-type: upper-roman;
+            background: #e9ecef;
+            padding: 15px;
+        }
+        ol.b li {
+            color: #0275d8;
+        }
+
+        /* Vị trí đánh dấu bên trong */
+        ul.c {
+            list-style-position: inside;
+            background: #e2e3e5;
+        }
+
+        /* Sử dụng hình ảnh làm marker */
+        ul.d {
+            list-style-image: url('https://www.w3schools.com/css/sqpurple.gif');
+        }
+
+        /* Thuộc tính rút gọn: type position image */
+        ul.e {
+            list-style: circle inside;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Lịch họp công ty</h1>
+    <h1>Thực hành Định kiểu Danh sách trong CSS</h1>
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Ngày</th>
-                <th>Giờ</th>
-                <th>Nội dung cuộc họp</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="2">Thứ Hai</td>
-                <td>08:00 - 09:00</td>
-                <td>Họp giao ban đầu tuần</td>
-            </tr>
-            <tr>
-                <td>10:00 - 11:30</td>
-                <td>Thảo luận dự án mới</td>
-            </tr>
-            <tr>
-                <td rowspan="2">Thứ Ba</td>
-                <td colspan="2">08:00 - 12:00: Đào tạo nhân sự toàn công ty (Cả buổi sáng)</td>
-            </tr>
-            <tr>
-                <td>14:00 - 15:30</td>
-                <td>Họp phòng kỹ thuật</td>
-            </tr>
-        </tbody>
-    </table>
+    <h2>1. Danh sách không thứ tự (square) + Màu sắc</h2>
+    <ul class="a">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+
+    <h2>2. Danh sách có thứ tự (upper-roman)</h2>
+    <ol class="b">
+        <li>Phần I</li>
+        <li>Phần II</li>
+        <li>Phần III</li>
+    </ol>
+
+    <h2>3. Vị trí đánh dấu (inside)</h2>
+    <ul class="c">
+        <li>Đánh dấu nằm bên trong khối dòng nội dung.</li>
+        <li>Mục tiếp theo trong danh sách.</li>
+    </ul>
+
+    <h2>4. Đánh dấu bằng hình ảnh</h2>
+    <ul class="d">
+        <li>Hình ảnh icon làm marker.</li>
+        <li>Tự động fallback về kiểu mặc định nếu ảnh lỗi.</li>
+    </ul>
+
+    <h2>5. Thuộc tính rút gọn (list-style)</h2>
+    <ul class="e">
+        <li>Thiết lập nhanh các thuộc tính cùng lúc.</li>
+        <li>Áp dụng kiểu circle và vị trí inside.</li>
+    </ul>
 
 </body>
 </html>
