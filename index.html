@@ -2,80 +2,68 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Thực hành Danh sách trong CSS</title>
+    <title>Thực hành Bảng trong CSS</title>
     <style>
-        /* Danh sách không thứ tự: kiểu square, màu chữ và background */
-        ul.a {
-            list-style-type: square;
-            background: #f4f4f4;
-            padding: 15px;
-        }
-        ul.a li {
-            color: #d9534f;
+        /* Thiết lập độ rộng, gộp đường viền trùng lặp */
+        table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        /* Danh sách có thứ tự: kiểu upper-roman */
-        ol.b {
-            list-style-type: upper-roman;
-            background: #e9ecef;
-            padding: 15px;
-        }
-        ol.b li {
-            color: #0275d8;
+        /* Định kiểu đường viền và padding cho header/cell */
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
         }
 
-        /* Vị trí đánh dấu bên trong */
-        ul.c {
-            list-style-position: inside;
-            background: #e2e3e5;
+        /* Định kiểu cho tiêu đề bảng: chiều cao, căn trái, màu nền và chữ */
+        th {
+            height: 50px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
         }
 
-        /* Sử dụng hình ảnh làm marker */
-        ul.d {
-            list-style-image: url('https://www.w3schools.com/css/sqpurple.gif');
+        /* Căn chỉnh chiều dọc và tô màu nền xem kẽ cho dòng */
+        td {
+            vertical-align: bottom;
         }
 
-        /* Thuộc tính rút gọn: type position image */
-        ul.e {
-            list-style: circle inside;
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
 
-    <h1>Thực hành Định kiểu Danh sách trong CSS</h1>
+    <h1>Thực hành Định kiểu Bảng trong CSS</h1>
 
-    <h2>1. Danh sách không thứ tự (square) + Màu sắc</h2>
-    <ul class="a">
-        <li>Mục 1</li>
-        <li>Mục 2</li>
-        <li>Mục 3</li>
-    </ul>
-
-    <h2>2. Danh sách có thứ tự (upper-roman)</h2>
-    <ol class="b">
-        <li>Phần I</li>
-        <li>Phần II</li>
-        <li>Phần III</li>
-    </ol>
-
-    <h2>3. Vị trí đánh dấu (inside)</h2>
-    <ul class="c">
-        <li>Đánh dấu nằm bên trong khối dòng nội dung.</li>
-        <li>Mục tiếp theo trong danh sách.</li>
-    </ul>
-
-    <h2>4. Đánh dấu bằng hình ảnh</h2>
-    <ul class="d">
-        <li>Hình ảnh icon làm marker.</li>
-        <li>Tự động fallback về kiểu mặc định nếu ảnh lỗi.</li>
-    </ul>
-
-    <h2>5. Thuộc tính rút gọn (list-style)</h2>
-    <ul class="e">
-        <li>Thiết lập nhanh các thuộc tính cùng lúc.</li>
-        <li>Áp dụng kiểu circle và vị trí inside.</li>
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Họ và tên</th>
+                <th>Chức vụ</th>
+                <th>Mức lương</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nguyễn Văn A</td>
+                <td>Lập trình viên Front-end</td>
+                <td>15.000.000 VNĐ</td>
+            </tr>
+            <tr>
+                <td>Trần Thị B</td>
+                <td>Thiết kế UI/UX</td>
+                <td>14.000.000 VNĐ</td>
+            </tr>
+            <tr>
+                <td>Lê Văn C</td>
+                <td>Quản lý dự án</td>
+                <td>25.000.000 VNĐ</td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>
