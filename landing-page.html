@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surface Devices - Landing Page</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="fab fa-windows me-2"></i>Microsoft Surface</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Computers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Computers for Business</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Deals</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-dark text-decoration-none"><i class="fas fa-search"></i></a>
+                    <a href="#" class="text-dark text-decoration-none"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" class="text-dark text-decoration-none"><i class="fas fa-user-circle fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Banner (Carousel) -->
+    <div id="surfaceHero" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="bg-dark text-white p-5 text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 400px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/1600/600?random=10') center/cover;">
+                    <h1 class="display-4 fw-bold">Meet Surface Pro</h1>
+                    <p class="lead">Ultra-light, versatile, and built for speed.</p>
+                    <a href="#" class="btn btn-primary btn-lg mt-3">Shop Surface Pro</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="bg-dark text-white p-5 text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 400px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/1600/600?random=11') center/cover;">
+                    <h1 class="display-4 fw-bold">Surface Laptop Studio</h1>
+                    <p class="lead">Incredibly powerful, infinitely flexible.</p>
+                    <a href="#" class="btn btn-primary btn-lg mt-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#surfaceHero" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#surfaceHero" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- 3. Feature Highlights Grid -->
+    <div class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Explore Surface Devices</h2>
+        <div class="row g-4">
+            <!-- Item 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://picsum.photos/400/250?random=1" class="card-img-top" alt="Surface Laptop">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Surface Laptop 5</h5>
+                        <p class="card-text text-muted flex-grow-1">Sleek, elegant, and blazing fast performance for multitasking.</p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://picsum.photos/400/250?random=2" class="card-img-top" alt="Surface Pro 9">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Surface Pro 9</h5>
+                        <p class="card-text text-muted flex-grow-1">The power of a laptop with the flexibility of a tablet.</p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://picsum.photos/400/250?random=3" class="card-img-top" alt="Surface Laptop Go 2">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Surface Laptop Go 2</h5>
+                        <p class="card-text text-muted flex-grow-1">Sleek and portable touchscreen laptop for everyday essentials.</p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://picsum.photos/400/250?random=4" class="card-img-top" alt="Surface Studio 2+">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Surface Studio 2+</h5>
+                        <p class="card-text text-muted flex-grow-1">Inspiration on an adjustable 28-inch touchscreen display.</p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">Shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Promo Banner -->
+    <div class="bg-light py-5 border-top border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://picsum.photos/800/500?random=5" class="img-fluid rounded shadow-sm" alt="Surface for Business">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <span class="badge bg-primary mb-2">FOR BUSINESS</span>
+                    <h2 class="fw-bold mb-3">Surface for Business</h2>
+                    <p class="text-muted lead">Empower your workforce with modern devices designed for secure remote work, seamless collaboration, and high performance.</p>
+                    <a href="#" class="btn btn-primary btn-lg">Explore Business Solutions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Footer -->
+    <footer class="bg-dark text-white-50 py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <h6 class="text-white fw-bold mb-3">What's new</h6>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-white-50 text-decoration-none" href="#">Surface Pro 9</a></li>
+                        <li><a class="text-white-50 text-decoration-none" href="#">Surface Laptop 5</a></li>
+                        <li><a class="text-white-50 text-decoration-none" href="#">Surface Studio 2+</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6 class="text-white fw-bold mb-3">Microsoft Store</h6>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-white-50 text-decoration-none" href="#">Account profile</a></li>
+                        <li><a class="text-white-50 text-decoration-none" href="#">Download Center</a></li>
+                        <li><a class="text-white-50 text-decoration-none" href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6 class="text-white fw-bold mb-3">Education</h6>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-white-50 text-decoration-none" href="#">Microsoft in education</a></li>
+                        <li><a class="text-white-50 text-decoration-none" href="#">Devices for education</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6 class="text-white fw-bold mb-3">Business</h6>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-white-50 text-decoration-none" href="#">Microsoft Cloud</a></li>
+                        <li><a class="text-white-50 text-decoration-none" href="#">Surface Development</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="d-flex justify-content-between align-items-center text-small">
+                <p class="m-0">&copy; 2026 Microsoft Corporation. All rights reserved.</p>
+                <div>
+                    <a href="#" class="text-white-50 text-decoration-none me-3">Privacy</a>
+                    <a href="#" class="text-white-50 text-decoration-none">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
