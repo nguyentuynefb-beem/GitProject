@@ -3,99 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Đăng Ký - Bootstrap Forms</title>
+    <title>Landing Page với Bootstrap và Hình Ảnh</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
+<body>
 
-<body class="bg-light">
+    <!-- Banner / Hero Section -->
+    <header class="bg-dark text-white text-center py-5 position-relative" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1200/500') center/cover no-repeat;">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Giải Pháp Công Nghệ Đột Phá</h1>
+            <p class="lead mb-4">Tối ưu hóa quy trình làm việc và nâng cao hiệu suất doanh nghiệp của bạn.</p>
+            <a href="#cta" class="btn btn-primary btn-lg px-4">Trải Nghiệm Ngay</a>
+        </div>
+    </header>
 
-    <div class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
-                <div class="card shadow-sm p-4">
-                    <h2 class="text-center text-primary mb-3">Tạo Tài Khoản</h2>
-                    <p class="text-center text-muted mb-4">Vui lòng điền đầy đủ thông tin bên dưới để đăng ký</p>
+    <!-- Giới Thiệu Sản Phẩm -->
+    <section class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="https://picsum.photos/600/400?random=1" alt="Sản phẩm" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-3">Về Sản Phẩm Của Chúng Tôi</h2>
+                <p class="text-muted">Chúng tôi cung cấp các công cụ thiết kế và phát triển ứng dụng tối tân nhất. Với giao diện thân thiện, dễ sử dụng cùng khả năng tương thích cao trên mọi thiết bị, giải pháp của chúng tôi sẽ đồng hành cùng sự thành công của bạn.</p>
+                <a href="#features" class="btn btn-outline-primary">Khám phá chi tiết</a>
+            </div>
+        </div>
+    </section>
 
-                    <form>
-                        <!-- Họ và tên -->
-                        <div class="mb-3">
-                            <label for="fullName" class="form-label font-weight-bold">Họ và tên</label>
-                            <input type="text" class="form-control" id="fullName" placeholder="Nhập họ và tên..." required>
-                        </div>
-
-                        <!-- Email -->
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                        </div>
-
-                        <!-- Mật khẩu -->
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu..." required>
-                        </div>
-
-                        <!-- Xác nhận mật khẩu -->
-                        <div class="mb-3">
-                            <label for="confirmPassword" class="form-label">Xác nhận mật khẩu</label>
-                            <input type="password" class="form-control" id="confirmPassword" placeholder="Nhập lại mật khẩu..." required>
-                        </div>
-
-                        <!-- Giới tính -->
-                        <div class="mb-3">
-                            <label class="form-label d-block">Giới tính</label>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" checked>
-                                <label class="form-check-label" for="genderMale">Nam</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female">
-                                <label class="form-check-label" for="genderFemale">Nữ</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="genderOther" value="other">
-                                <label class="form-check-label" for="genderOther">Khác</label>
-                            </div>
-                        </div>
-
-                        <!-- Sở thích -->
-                        <div class="mb-3">
-                            <label class="form-label d-block">Sở thích</label>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="hobbyReading" value="reading">
-                                <label class="form-check-label" for="hobbyReading">Đọc sách</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="hobbySports" value="sports">
-                                <label class="form-check-label" for="hobbySports">Thể thao</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="hobbyTravel" value="travel">
-                                <label class="form-check-label" for="hobbyTravel">Du lịch</label>
-                            </div>
-                        </div>
-
-                        <!-- Quốc gia -->
-                        <div class="mb-4">
-                            <label for="country" class="form-label">Quốc gia</label>
-                            <select class="form-select" id="country">
-                                <option value="" selected disabled>-- Chọn quốc gia --</option>
-                                <option value="VN">Việt Nam</option>
-                                <option value="US">Mỹ</option>
-                                <option value="JP">Nhật Bản</option>
-                                <option value="KR">Hàn Quốc</option>
-                            </select>
-                        </div>
-
-                        <!-- Nút Submit -->
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary btn-lg">Đăng Ký</button>
-                        </div>
-                    </form>
+    <!-- Danh Sách Tính Năng -->
+    <section id="features" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Tính Năng Nổi Bật</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="p-3">
+                        <i class="bi bi-lightning-charge-fill text-primary display-4 mb-3"></i>
+                        <h4 class="fw-bold">Tốc Độ Tối Ưu</h4>
+                        <p class="text-muted">Tải trang cực nhanh, tối ưu hóa trải nghiệm người dùng trên mọi nền tảng.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-3">
+                        <i class="bi bi-shield-lock-fill text-primary display-4 mb-3"></i>
+                        <h4 class="fw-bold">Bảo Mật An Toàn</h4>
+                        <p class="text-muted">Cam kết bảo vệ dữ liệu người dùng với các tiêu chuẩn an ninh mạng hàng đầu.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-3">
+                        <i class="bi bi-phone-fill text-primary display-4 mb-3"></i>
+                        <h4 class="fw-bold">Giao Diện Responsive</h4>
+                        <p class="text-muted">Tương thích hoàn hảo trên các thiết bị Mobile, Tablet và Desktop.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Nút Kêu Gọi Hành Động (CTA) -->
+    <section id="cta" class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Sẵn Sàng Bắt Đầu Hành Trình Cùng Chúng Tôi?</h2>
+            <p class="lead mb-4">Đăng ký ngay hôm nay để nhận được ưu đãi trải nghiệm 30 ngày hoàn toàn miễn phí.</p>
+            <a href="#" class="btn btn-light btn-lg text-primary fw-bold px-5">Đăng Ký Ngay</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 Landing Page Assignment. All rights reserved.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
