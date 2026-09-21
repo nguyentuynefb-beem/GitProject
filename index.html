@@ -3,39 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực hành flex-wrap Property</title>
+    <title>Thực hành flex-basis Property</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h2>1. flex-wrap: wrap (Bọc thành nhiều dòng)</h2>
-    <div class="flex-container wrap">
-        <div class="flex-item">1</div>
-        <div class="flex-item">2</div>
-        <div class="flex-item">3</div>
-        <div class="flex-item">4</div>
-        <div class="flex-item">5</div>
-        <div class="flex-item">6</div>
+    <h2>1. flex-basis: auto (Kích thước co giãn theo nội dung)</h2>
+    <div class="flex-container">
+        <div class="flex-item item-auto">Ngắn</div>
+        <div class="flex-item item-auto">Nội dung dài hơn một chút</div>
+        <div class="flex-item item-auto">Kích thước phụ thuộc vào chữ</div>
     </div>
 
-    <h2>2. flex-wrap: nowrap (Mặc định - Dồn trên 1 dòng)</h2>
-    <div class="flex-container nowrap">
-        <div class="flex-item">1</div>
-        <div class="flex-item">2</div>
-        <div class="flex-item">3</div>
-        <div class="flex-item">4</div>
-        <div class="flex-item">5</div>
-        <div class="flex-item">6</div>
+    <h2>2. flex-basis: 200px (Kích thước ban đầu cố định 200px)</h2>
+    <div class="flex-container">
+        <div class="flex-item item-200px">Item 1 (200px)</div>
+        <div class="flex-item item-200px">Item 2 (200px)</div>
+        <div class="flex-item item-auto">Item 3 (auto)</div>
     </div>
 
-    <h2>3. flex-wrap: wrap-reverse (Bọc ngược dòng)</h2>
-    <div class="flex-container wrap-reverse">
-        <div class="flex-item">1</div>
-        <div class="flex-item">2</div>
-        <div class="flex-item">3</div>
-        <div class="flex-item">4</div>
-        <div class="flex-item">5</div>
-        <div class="flex-item">6</div>
+    <h2>3. flex-basis: 50% (Chiếm 50% chiều rộng khung chứa)</h2>
+    <div class="flex-container">
+        <div class="flex-item item-50percent">Item 50%</div>
+        <div class="flex-item item-auto">Item Auto</div>
     </div>
 
 </body>

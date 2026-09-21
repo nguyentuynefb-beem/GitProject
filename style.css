@@ -23,30 +23,31 @@ h2 {
     border-radius: 5px;
 }
 
-/* 1. flex-wrap: wrap (cho phép xuống dòng khi tràn) */
-.wrap {
-    flex-wrap: wrap;
-}
-
-/* 2. flex-wrap: nowrap (mặc định - không xuống dòng) */
-.nowrap {
-    flex-wrap: nowrap;
-}
-
-/* 3. flex-wrap: wrap-reverse (xuống dòng theo chiều ngược lại) */
-.wrap-reverse {
-    flex-wrap: wrap-reverse;
-}
-
 .flex-item {
     background-color: #3498db;
     color: white;
-    width: 150px;
-    height: 80px;
-    margin: 10px;
+    padding: 15px;
+    margin: 5px;
     text-align: center;
-    line-height: 80px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     border-radius: 4px;
+}
+
+/* 1. flex-basis: auto (Mặc định - kích thước theo nội dung) */
+.item-auto {
+    flex-basis: auto;
+    background-color: #2ecc71;
+}
+
+/* 2. flex-basis dạng đơn vị pixel cố định */
+.item-200px {
+    flex-basis: 200px;
+    background-color: #e67e22;
+}
+
+/* 3. flex-basis dạng phần trăm */
+.item-50percent {
+    flex-basis: 50%;
+    background-color: #e74c3c;
 }
