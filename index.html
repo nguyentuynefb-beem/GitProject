@@ -2,68 +2,43 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Thực hành Bảng trong CSS</title>
-    <style>
-        /* Thiết lập độ rộng, gộp đường viền trùng lặp */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        /* Định kiểu đường viền và padding cho header/cell */
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-        }
-
-        /* Định kiểu cho tiêu đề bảng: chiều cao, căn trái, màu nền và chữ */
-        th {
-            height: 50px;
-            text-align: left;
-            background-color: #04AA6D;
-            color: white;
-        }
-
-        /* Căn chỉnh chiều dọc và tô màu nền xem kẽ cho dòng */
-        td {
-            vertical-align: bottom;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Cá Nhân</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Thực hành Định kiểu Bảng trong CSS</h1>
-
-    <table>
-        <thead>
+    <header>
+        <h1>Chào mừng đến với trang web cá nhân của tôi</h1>
+    </header>
+    <section class="profile">
+        <img src="avatar.jpg" alt="Ảnh đại diện" class="avatar">
+        <p>Xin chào! Tôi là <strong>Nguyễn Văn A</strong>, một lập trình viên yêu thích công nghệ.</p>
+    </section>
+    <section class="hobbies">
+        <h2>Sở thích</h2>
+        <ul>
+            <li>Đọc sách</li>
+            <li>Chơi thể thao</li>
+            <li>Lập trình</li>
+            <li>Du lịch</li>
+        </ul>
+    </section>
+    <section class="goals">
+        <h2>Mục tiêu học tập</h2>
+        <p>Tôi muốn trở thành một lập trình viên chuyên nghiệp, xây dựng các sản phẩm hữu ích.</p>
+    </section>
+    <footer>
+        <h2>Thông tin liên hệ</h2>
+        <table border="1">
             <tr>
-                <th>Họ và tên</th>
-                <th>Chức vụ</th>
-                <th>Mức lương</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Nguyễn Văn A</td>
-                <td>Lập trình viên Front-end</td>
-                <td>15.000.000 VNĐ</td>
+                <th>Email</th>
+                <td>nguyenvana@example.com</td>
             </tr>
             <tr>
-                <td>Trần Thị B</td>
-                <td>Thiết kế UI/UX</td>
-                <td>14.000.000 VNĐ</td>
+                <th>Facebook</th>
+                <td><a href="#">facebook.com/nguyenvana</a></td>
             </tr>
-            <tr>
-                <td>Lê Văn C</td>
-                <td>Quản lý dự án</td>
-                <td>25.000.000 VNĐ</td>
-            </tr>
-        </tbody>
-    </table>
-
+        </table>
+    </footer>
 </body>
 </html>
