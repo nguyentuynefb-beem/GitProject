@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục 3 Cột - Bootstrap Grid & Flexbox</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Bước 1: Cấu trúc Grid 3 cột với Flexbox -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 d-flex justify-content-center align-items-center bg-light p-3">
+                <p class="m-0">Phần 1</p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center align-items-center bg-secondary p-3 text-white">
+                <p class="m-0">Phần 2</p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center align-items-center bg-light p-3">
+                <p class="m-0">Phần 3</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bước 2: Margin & Padding -->
+    <div class="container my-5 py-3">
+        <h3 class="text-center">Khoảng cách được điều chỉnh bằng Margin & Padding</h3>
+    </div>
+
+    <!-- Bước 3: Display Property (Ẩn/Hiện theo màn hình) -->
+    <div class="d-none d-md-block bg-warning text-center p-3">
+        <p class="m-0">Nội dung này chỉ hiển thị trên màn hình lớn hơn 768px</p>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
