@@ -1,29 +1,67 @@
-* {
-    box-sizing: border-box;
+/* 1. Body & Main */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.container {
-    width: 100%;
-    overflow: hidden;
+#main {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
 }
 
-.left-column {
-    width: 60%;
+/* 2 & 4. Head & Head Link */
+#head {
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#head-link {
+    height: 30px;
+    background-color: #007bff;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+/* 6 & 8. Left, Content & Right */
+#left {
+    width: 200px;
+    min-height: 400px;
     float: left;
-    background-color: lightblue;
-    padding: 20px;
+    background-color: #e9ecef;
+    margin-right: 10px;
 }
 
-.right-column {
-    width: 38%;
+#content {
+    width: 530px;
+    min-height: 400px;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#right {
+    width: 200px;
+    min-height: 400px;
     float: right;
-    background-color: lightgreen;
-    padding: 20px;
+    background-color: #e9ecef;
 }
 
-/* Clearfix giải quyết lỗi float */
-.container::after {
-    content: "";
-    display: block;
+/* 10. Footer */
+#footer {
     clear: both;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 10px;
 }
