@@ -1,0 +1,39 @@
+/* Tùy chỉnh Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 85vh;
+}
+
+.hero-book-img {
+    max-height: 480px;
+    transition: transform 0.3s ease;
+}
+
+.hero-book-img:hover {
+    transform: translateY(-10px);
+}
+
+/* Feature Icon */
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hiệu ứng Hover cho Card */
+.feature-card, .price-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover, .price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
