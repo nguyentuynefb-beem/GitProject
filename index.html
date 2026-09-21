@@ -2,44 +2,23 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Thực hành Nhúng CSS</title>
-    <!-- Nhúng External Style -->
+    <title>Trang web của tôi</title>
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Phần 2: Internal Style -->
-    <style>
-        .internal-title {
-            color: #27ae60;
-        }
-        .internal-text {
-            color: #8e44ad;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
 
-    <!-- Phần 1: Inline Style -->
-    <section>
-        <h1 style="color: red;">Tiêu đề dùng Inline Style</h1>
-        <p style="color: blue;">Đoạn văn này được đổi màu bằng Inline Style.</p>
-    </section>
+    <h1 id="main-title">Trang web của tôi</h1>
 
-    <hr>
+    <p class="bio-text">Xin chào! Tôi là một học viên lập trình web đang luyện tập sử dụng các bộ chọn CSS.</p>
 
-    <!-- Phần 2: Internal Style -->
-    <section>
-        <h1 class="internal-title">Tiêu đề dùng Internal Style</h1>
-        <p class="internal-text">Đoạn văn này được đổi màu bằng Internal Style.</p>
-    </section>
+    <h2>Sở thích của tôi:</h2>
+    <ul class="hobby-list">
+        <li>Lập trình web</li>
+        <li>Đọc sách công nghệ</li>
+        <li>Nghe nhạc</li>
+    </ul>
 
-    <hr>
-
-    <!-- Phần 3: External Style -->
-    <section>
-        <h1 class="external-title">Tiêu đề dùng External Style</h1>
-        <p class="external-text">Đoạn văn này được đổi màu bằng External Style.</p>
-    </section>
+    <button class="btn-action">Nhấn vào đây</button>
 
 </body>
 </html>

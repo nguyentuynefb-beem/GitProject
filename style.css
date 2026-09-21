@@ -1,9 +1,48 @@
-/* External Style */
-.external-title {
-    color: #2c3e50;
-    text-transform: uppercase;
+/* Bộ chọn Element: Đổi màu nền trang web */
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
-.external-text {
-    color: #e67e22;
-    font-size: 18px;
+
+/* Bộ chọn ID: Căn giữa tiêu đề h1 */
+#main-title {
+    text-align: center;
+    color: #1a365d;
+}
+
+/* Bộ chọn Class & Grouping: Định dạng đoạn văn mô tả */
+.bio-text {
+    font-size: 16px;
+    color: #4a5568;
+    text-align: center;
+}
+
+/* Bộ chọn Pseudo-class (:nth-child): Định dạng danh sách sở thích với màu sắc khác nhau */
+.hobby-list li:nth-child(1) {
+    color: #e53e3e; /* Đỏ */
+}
+.hobby-list li:nth-child(2) {
+    color: #319795; /* Xanh ngọc */
+}
+.hobby-list li:nth-child(3) {
+    color: #dd6b20; /* Cam */
+}
+
+/* Bộ chọn Class & Pseudo-class (:hover): Định dạng button và hover effect */
+.btn-action {
+    background-color: #3182ce;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+}
+
+.btn-action:hover {
+    background-color: #2b6cb0;
 }
