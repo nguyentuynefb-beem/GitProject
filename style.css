@@ -7,68 +7,30 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
+    background-color: #f8f9fa;
 }
 
 h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-h4 {
-    font-weight: normal;
-    margin-bottom: 20px;
-}
-
-/* Gallery Container */
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -6px;
-}
-
-/* Mặc định trên màn hình > 700px: 4 cột (25% mỗi cột) */
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
     margin-bottom: 15px;
+    color: #333;
 }
 
-div.gallery {
-    border: 1px solid #ccc;
+/* Định cấu hình CSS Grid */
+.grid-container {
+    display: grid;
+    /* Thiết lập 4 cột với các loại giá trị khác nhau */
+    grid-template-columns: 150px auto min-content max-content;
+    gap: 10px;
+    background-color: #2c3e50;
+    padding: 10px;
+    border-radius: 6px;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-div.desc {
-    padding: 15px;
+.grid-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
     text-align: center;
-}
-
-.note {
-    clear: both;
-    margin-top: 20px;
-    line-height: 1.5;
-}
-
-/* Màn hình nhỏ hơn 700px: 2 cột (50% mỗi cột) */
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 49.99999%;
-    }
-}
-
-/* Màn hình nhỏ hơn 500px: 1 cột (100% mỗi cột) */
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
+    border-radius: 4px;
 }

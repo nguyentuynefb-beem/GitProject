@@ -3,47 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Image Gallery</title>
+    <title>Thực hành grid-template-columns</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h2>Responsive Image Gallery</h2>
-    <h4>Resize the browser window to see the effect.</h4>
+    <h2>Thực hành Thuộc tính grid-template-columns</h2>
 
-    <div class="gallery-container">
-        <div class="responsive">
-            <div class="gallery">
-                <img src="https://picsum.photos/600/400?random=1" alt="Image 1">
-                <div class="desc">Add a description of the image here</div>
-            </div>
-        </div>
-
-        <div class="responsive">
-            <div class="gallery">
-                <img src="https://picsum.photos/600/400?random=2" alt="Image 2">
-                <div class="desc">Add a description of the image here</div>
-            </div>
-        </div>
-
-        <div class="responsive">
-            <div class="gallery">
-                <img src="https://picsum.photos/600/400?random=3" alt="Image 3">
-                <div class="desc">Add a description of the image here</div>
-            </div>
-        </div>
-
-        <div class="responsive">
-            <div class="gallery">
-                <img src="https://picsum.photos/600/400?random=4" alt="Image 4">
-                <div class="desc">Add a description of the image here</div>
-            </div>
-        </div>
+    <div class="grid-container">
+        <div class="grid-item">Cột 1 (150px)</div>
+        <div class="grid-item">Cột 2 (auto)</div>
+        <div class="grid-item">Cột 3 (min-content)</div>
+        <div class="grid-item">Cột 4 (max-content)</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+        <div class="grid-item">Item 7</div>
+        <div class="grid-item">Item 8</div>
     </div>
-
-    <p class="note">
-        This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).
-    </p>
 
 </body>
 </html>
