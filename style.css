@@ -1,108 +1,74 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
+    padding: 20px;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 15px 20px;
-    color: white;
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav ul {
-    list-style: none;
-    display: flex;
-}
-
-.nav ul li {
-    margin: 0 15px;
-}
-
-.nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #f4f4f4;
-}
-
-.hero h1 {
-    margin-bottom: 15px;
-}
-
-.hero p {
+h4 {
+    font-weight: normal;
     margin-bottom: 20px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.services {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.service-container {
+/* Gallery Container */
+.gallery-container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 -6px;
+}
+
+/* Mặc định trên màn hình > 700px: 4 cột (25% mỗi cột) */
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    margin-bottom: 15px;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.note {
+    clear: both;
     margin-top: 20px;
+    line-height: 1.5;
 }
 
-.service {
-    background-color: lightblue;
-    padding: 20px;
-    margin: 10px;
-    flex: 1;
-    border-radius: 5px;
-}
-
-.testimonials {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #ddd;
-}
-
-.testimonial {
-    margin-top: 15px;
-    font-style: italic;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-/* Responsive cho Mobile */
-@media (max-width: 768px) {
-    .nav ul {
-        display: none;
+/* Màn hình nhỏ hơn 700px: 2 cột (50% mỗi cột) */
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
     }
+}
 
-    .service-container {
-        flex-direction: column;
+/* Màn hình nhỏ hơn 500px: 1 cột (100% mỗi cột) */
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
     }
 }
