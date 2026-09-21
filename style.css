@@ -11,7 +11,7 @@ body {
 }
 
 h2 {
-    margin: 15px 0 10px;
+    margin-bottom: 15px;
     color: #333;
 }
 
@@ -19,35 +19,24 @@ h2 {
     display: flex;
     background-color: #333;
     padding: 10px;
-    margin-bottom: 20px;
     border-radius: 5px;
 }
 
 .flex-item {
     background-color: #3498db;
     color: white;
-    padding: 15px;
+    padding: 20px;
     margin: 5px;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     border-radius: 4px;
+    /* Mặc định không giãn */
+    flex-grow: 0;
 }
 
-/* 1. flex-basis: auto (Mặc định - kích thước theo nội dung) */
-.item-auto {
-    flex-basis: auto;
-    background-color: #2ecc71;
-}
-
-/* 2. flex-basis dạng đơn vị pixel cố định */
-.item-200px {
-    flex-basis: 200px;
-    background-color: #e67e22;
-}
-
-/* 3. flex-basis dạng phần trăm */
-.item-50percent {
-    flex-basis: 50%;
+/* Div thứ 2 tăng trưởng chiếm không gian trống còn lại */
+.flex-item:nth-child(2) {
+    flex-grow: 1;
     background-color: #e74c3c;
 }
