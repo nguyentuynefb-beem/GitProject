@@ -1,60 +1,52 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
-        "header header"
-        "sidebar content"
-        "footer footer";
-    height: 100vh;
-}
-
-.header {
-    grid-area: header;
-    background-color: #333;
-    color: white;
-    text-align: center;
     padding: 20px;
-}
-
-.sidebar {
-    grid-area: sidebar;
     background-color: #f4f4f4;
-    padding: 20px;
 }
 
-.content {
-    grid-area: content;
-    padding: 20px;
+h2 {
+    margin: 15px 0 10px;
+    color: #333;
 }
 
-.footer {
-    grid-area: footer;
+.flex-container {
+    display: flex;
     background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
-/* Responsive cho Mobile */
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 1fr auto;
-        grid-template-areas: 
-            "header"
-            "sidebar"
-            "content"
-            "footer";
-    }
+/* 1. flex-wrap: wrap (cho phép xuống dòng khi tràn) */
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* 2. flex-wrap: nowrap (mặc định - không xuống dòng) */
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+/* 3. flex-wrap: wrap-reverse (xuống dòng theo chiều ngược lại) */
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.flex-item {
+    background-color: #3498db;
+    color: white;
+    width: 150px;
+    height: 80px;
+    margin: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
 }
