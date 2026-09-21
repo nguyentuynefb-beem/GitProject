@@ -3,65 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Grid System Layout</title>
+    <title>Trang Đăng Ký - Bootstrap Forms</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
-<body>
 
-    <!-- Header -->
-    <header class="bg-primary text-white text-center py-4">
-        <h1>Website Bootstrap Grid Layout</h1>
-    </header>
+<body class="bg-light">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">GridApp</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Danh mục</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Tin tức</a></li>
-                            <li><a class="dropdown-item" href="#">Sản phẩm</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
-                </ul>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-sm p-4">
+                    <h2 class="text-center text-primary mb-3">Tạo Tài Khoản</h2>
+                    <p class="text-center text-muted mb-4">Vui lòng điền đầy đủ thông tin bên dưới để đăng ký</p>
+
+                    <form>
+                        <!-- Họ và tên -->
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label font-weight-bold">Họ và tên</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Nhập họ và tên..." required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                        </div>
+
+                        <!-- Mật khẩu -->
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu..." required>
+                        </div>
+
+                        <!-- Xác nhận mật khẩu -->
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Nhập lại mật khẩu..." required>
+                        </div>
+
+                        <!-- Giới tính -->
+                        <div class="mb-3">
+                            <label class="form-label d-block">Giới tính</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" checked>
+                                <label class="form-check-label" for="genderMale">Nam</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female">
+                                <label class="form-check-label" for="genderFemale">Nữ</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="genderOther" value="other">
+                                <label class="form-check-label" for="genderOther">Khác</label>
+                            </div>
+                        </div>
+
+                        <!-- Sở thích -->
+                        <div class="mb-3">
+                            <label class="form-label d-block">Sở thích</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="hobbyReading" value="reading">
+                                <label class="form-check-label" for="hobbyReading">Đọc sách</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="hobbySports" value="sports">
+                                <label class="form-check-label" for="hobbySports">Thể thao</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="hobbyTravel" value="travel">
+                                <label class="form-check-label" for="hobbyTravel">Du lịch</label>
+                            </div>
+                        </div>
+
+                        <!-- Quốc gia -->
+                        <div class="mb-4">
+                            <label for="country" class="form-label">Quốc gia</label>
+                            <select class="form-select" id="country">
+                                <option value="" selected disabled>-- Chọn quốc gia --</option>
+                                <option value="VN">Việt Nam</option>
+                                <option value="US">Mỹ</option>
+                                <option value="JP">Nhật Bản</option>
+                                <option value="KR">Hàn Quốc</option>
+                            </select>
+                        </div>
+
+                        <!-- Nút Submit -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Đăng Ký</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <!-- Main Content & Sidebar -->
-    <div class="container my-4">
-        <div class="row">
-            <!-- Main Content: 8 cột trên Desktop (≥992px), 12 cột trên Mobile -->
-            <main class="col-lg-8 col-12 mb-4">
-                <div class="p-4 border bg-light rounded">
-                    <h2>Nội dung chính</h2>
-                    <p>Đây là khu vực hiển thị nội dung chính của trang web. Bố cục này sử dụng hệ thống Bootstrap Grid System để tự động chuyển đổi từ 2 cột sang 1 cột tùy theo kích thước màn hình.</p>
-                </div>
-            </main>
-
-            <!-- Sidebar: 4 cột trên Desktop (≥992px), 12 cột trên Mobile -->
-            <aside class="col-lg-4 col-12">
-                <div class="p-4 border bg-white rounded">
-                    <h3>Sidebar</h3>
-                    <p>Khu vực thanh bên chứa thông tin phụ, danh mục hoặc bài viết liên quan.</p>
-                </div>
-            </aside>
-        </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-auto">
-        <p class="mb-0">&copy; 2026 Bootstrap Grid Assignment. All rights reserved.</p>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
